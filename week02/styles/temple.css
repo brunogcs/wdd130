@@ -1,0 +1,77 @@
+html{}
+head{}
+title{}
+body{}
+header p{
+    background-color: rgb(49, 49, 49);
+    color: white;
+
+    max-width: 400px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+    padding: 10px; /* Espaçamento interno da seção */
+}
+h1{
+    text-align: center;
+}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{}
+a{}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 30px #333;
+}
+ul{}
+li{}
+section{
+    background-color: lightgray;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+
+    max-width: 400px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+    padding: 10px; /* Espaçamento interno da seção */
+}
+
+section ul {
+    list-style-position: inside; /* Faz com que os marcadores fiquem dentro do contêiner */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+section li {
+    padding-left: 10px; /* Ajusta o espaço entre o marcador e o texto */
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+}
+footer p{
+    background-color: rgb(49, 49, 49);
+    color: white;
+
+    max-width: 400px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+    padding: 10px; /* Espaçamento interno da seção */
+}
+div{}
+span{}
+table{}
+tr{}
+td{}
+th{}
+form{}
+input{}
+button{}
+label{}
+textarea{}
+select{}
+option{}
+blockquote{}
+code{}
+strong{}
+em{}
