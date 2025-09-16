@@ -48,7 +48,7 @@ nav, p, section, article{
   position: relative;
 }
 
-.hero img {
+.hero img{
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -66,6 +66,6 @@ nav, p, section, article{
   height: auto;   /* mantém a proporção da imagem */
 }
 
-.socialmedia a {
+.socialmedia a{
   text-decoration: none;
 }
