@@ -1,0 +1,71 @@
+  :root {
+  --primary-color: #d73953;
+  --secondary-color: #f4296e;
+  --accent1-color: #f4d35e;
+  --accent2-color: #2c3e50;
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+body{
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer{
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1{
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+h1, h2{
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article{
+  margin: 16px;
+  padding: 8px;
+}
+
+.hero{
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+.hero article img{
+  width: 125px;
+  float: right;
+}
+
+.happy-client img{
+  width: 30%;   /* define a largura desejada */
+  height: auto;   /* mantém a proporção da imagem */
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
