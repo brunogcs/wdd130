@@ -61,6 +61,16 @@ nav, p, section, article{
   float: right;
 }
 
+.hero h1, .hero article {
+  position: absolute;
+  top: 20px; 
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 1rem;
+}
+
+
 .happy-client img{
   width: 30%;   /* define a largura desejada */
   height: auto;   /* mantém a proporção da imagem */
