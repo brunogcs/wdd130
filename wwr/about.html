@@ -11,73 +11,122 @@
 </head>
 
 <body>
+    <div class="header-box">
+        <header class="site-header">
+            <div class="logo">
+                <a href="index.html"><img src="images/wwr-logo.png" alt="Company Logo"></a>
+            </div>
 
-    <header>
-        <img src="images/wwr-logo.png" alt="Company Logo">
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="about.html">About</a> </li>
-                <li> <a href="trips.html">Trips</a> </li>
-                <li> <a href="contact.html">Contact</a> </li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
     <main>
-        <div class="hero">
-            <img class="hero" src="images/hero2.jpg" alt="About Background of Rafting Company Website">
-            <h1>White Water Rafting Co.</h1>
+        <div class="hero-box">
+            <section class="hero">
+                <img class="hero-img" src="images/hero2.jpg" alt="About Background of Rafting Company Website">
+                <h1>White Water Rafting Co.</h1>
 
-            <article class="happy-client">
-                <img class="happy-client" src="images/happy-client.jpg" alt="Happy Client">
-                <p> Propósito: Conectar pessoas à natureza por meio de aventuras seguras e emocionantes.</p>
-                <p>Missão:Oferecer experiências de rafting inesquecíveis com segurança, diversão e respeito ao meio
-                    ambiente.</p>
-                <p>Credo: Aventura,segurança, preservação e espírito de equipe. Lema: "Sinta a emoção, viva a aventura."
-                </p>
-            </article>
-
-            <section class="history">
-                <h2>History</h2>
-                <p>White Water Rafting (WWR) was founded with a passion for adventure and a deep respect for the rivers
-                    we call home.
-                    Inspired by the early pioneers of rafting — from the first rubber rafts of the 1840s to the guided
-                    expeditions that
-                    gained popularity in the mid‑20th century2 — WWR began offering thrilling, safe, and eco‑friendly
-                    rafting trips for all
-                    skill levels. What started as a small group of river enthusiasts has grown into a trusted outfitter,
-                    known for combining
-                    adrenaline‑filled rapids with breathtaking scenery and a commitment to preserving our waterways for
-                    future generations.</p>
+                <article class="happy-client">
+                    <img class="happy-client-img" src="images/happy-client.jpg" alt="Happy Client">
+                    <p><strong>Propósito:</strong> Conectar pessoas à natureza por meio de aventuras seguras e
+                        emocionantes.
+                    </p>
+                    <p><strong>Missão:</strong> Oferecer experiências de rafting inesquecíveis com segurança, diversão e
+                        respeito ao meio ambiente.</p>
+                    <p><strong>Credo:</strong> Aventura, segurança, preservação e espírito de equipe.
+                        <strong>Lema:</strong>
+                        "Sinta a emoção, viva a aventura."
+                    </p>
+                </article>
             </section>
+        </div>
 
-            <section class="adventure">
-                <h2>Adventure Awaits You!</h2>
+        <div class="history-box">
+            <section class="history" aria-labelledby="history-heading">
+                <h2 id="history-heading">History</h2>
+                <div class="history-grid">
+                    <div class="history-col">
+                        <p>White Water Rafting (WWR) was founded with a passion for adventure and a deep respect for the
+                            rivers we call home. Inspired by the early pioneers of rafting — from the first rubber rafts
+                            of
+                            the 1840s to the guided expeditions that gained popularity in the mid‑20th century — WWR
+                            began
+                            offering thrilling, safe, and eco‑friendly rafting trips for all skill levels.</p>
+                    </div>
+
+                    <div class="history-image">
+                        <img src="images/hero.png" alt="Historic rafting photo">
+                    </div>
+
+                    <div class="history-col">
+                        <p>What started as a small group of river enthusiasts has grown into a trusted outfitter, known
+                            for
+                            combining adrenaline‑filled rapids with breathtaking scenery and a commitment to preserving
+                            our
+                            waterways for future generations.</p>
+                    </div>
+                </div>
             </section>
+        </div>
 
+        <div class="adventure-box">
+            <section class="adventure" aria-labelledby="adventure-heading">
+                <h2 id="adventure-heading">Adventure Awaits You!</h2>
+
+                <div class="adventure-list">
+                    <figure>
+                        <img src="images/adventure-1.jpg" alt="Los Dientes del Diablo rapid">
+                        <figcaption>Los Dientes del Diablo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/adventure-2.jpg" alt="Big Mallard rapid">
+                        <figcaption>Big Mallard</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/adventure-3.jpg" alt="Half Day Adventure">
+                        <figcaption>Half Day Adventure</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/adventure-4.jpg" alt="Sunset Float">
+                        <figcaption>Sunset Float</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/adventure-5.jpg" alt="Family Rapids">
+                        <figcaption>Family Rapids</figcaption>
+                    </figure>
+                </div>
+            </section>
         </div>
     </main>
 
-    <footer>
-        <p>©️ 2025 White Water Rafting Co. - Bruno Gabriel da Conceição Silva</p>
-        <nav class="socialmedia">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/">Facebook
-                        <img src="images/facebook.png" alt="Facebook Logo">
-                    </a>
-                    <a href="https://www.instagram.com/">Instagram
-                        <img src="images/instagram.png" alt="Instagram Logo">
-                    </a>
-                    <a
-                        href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR&lang=en&enter_method=mandatory">TikTok
-                        <img src="images/tiktok.png" alt="TikTok Logo">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
+    <div class="footer-box">
+        <footer class="site-footer">
+            <p>©️ 2025 White Water Rafting Co. - Bruno Gabriel da Conceição Silva</p>
+            <nav class="socialmedia" aria-label="Social media">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="images/facebook.png" alt="Facebook Logo"> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="images/instagram.png" alt="Instagram Logo"> Instagram
+                        </a>
+                        <a href="https://www.tiktok.com/">
+                            <img src="images/tiktok.png" alt="TikTok Logo"> TikTok
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 
 </body>
 
