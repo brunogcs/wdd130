@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+header, h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+    max-width: 600px;
+    margin: 0 auto center;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0capture;
+    border: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    max-width: 600px;
+    margin: 0 auto center;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-items: center;
+}
+
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    align-items: right;
+    justify-items: right;
+    text-align: right;
+}
+
+input, select, textarea{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: right;
+    justify-items: right;
+    text-align: right;
+}
+
+input [type="checkbox"]{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+    align-items: right;
+    justify-items: right;
+    text-align: right;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: #fff;
+    background-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: right;
+    justify-items: right;
+    text-align: right;
+}
+
+button:hover{
+    background-color: #0066cc;
+    cursor: pointer;
+}
