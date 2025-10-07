@@ -607,3 +607,150 @@ button:hover {
 #newsletter-form button:hover {
     background-color: #c72943;
 }
+
+/************************ TRIPS PAGE STYLES *************************/
+
+/* --- 1. BANNER E CTA --- */
+
+#trips-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
+
+#trips-banner h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#trips-banner p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.contact-cta {
+    /* Reutiliza o estilo do botão do index, mas define a cor de fundo primária para destaque */
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+}
+
+.contact-cta:hover {
+    background-color: #a7253d; /* Um tom mais escuro do primary-color no hover */
+}
+
+
+/* --- 2. DETALHES DAS VIAGENS (Layout não-coluna única com Flexbox/Grid) --- */
+
+#trip-descriptions {
+    max-width: var(--max-width);
+    margin: 40px auto;
+    padding: 0 var(--gutter);
+}
+
+.trip-detail {
+    display: flex; /* Usa Flexbox para dispor imagem e texto lado a lado */
+    background: #fbfbfb;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.trip-detail .trip-photo {
+    width: 40%;
+    min-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.trip-detail .trip-info {
+    width: 60%;
+    padding: 25px;
+}
+
+.trip-detail h2 {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+.trip-detail .trip-level {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Reverte a ordem da imagem e texto para um layout mais dinâmico */
+.trip-detail.reverse-order {
+    flex-direction: row-reverse;
+}
+
+/* Media Query para responsividade (mobile) */
+@media (max-width: 768px) {
+    .trip-detail,
+    .trip-detail.reverse-order {
+        flex-direction: column; /* Em telas menores, volta para coluna única */
+    }
+    .trip-detail .trip-photo,
+    .trip-detail .trip-info {
+        width: 100%; /* Imagem e info ocupam a largura total */
+    }
+}
+
+
+/* --- 3. TABELA DE RESUMO (Critério 16) --- */
+
+#trip-summary {
+    max-width: var(--max-width);
+    margin: 60px auto;
+    padding: 0 var(--gutter);
+}
+
+#trip-summary h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.table-container {
+    overflow-x: auto; /* Garante que a tabela seja scrollável em telas muito pequenas */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove as bordas duplas da tabela */
+    background-color: #fff;
+    font-size: 1em;
+}
+
+thead tr {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8; /* Listras para melhorar a leitura */
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
