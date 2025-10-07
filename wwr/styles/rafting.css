@@ -1,3 +1,5 @@
+/************************ GLOBAL *************************/
+
 :root{
   --primary-color: #d73953;
   --secondary-color: #f4296e;
@@ -14,6 +16,8 @@
   margin:0; 
   padding:0
 }
+
+/************************ BASIC STYLES *************************/
 
 body{
   font-family: var(--body-font);
@@ -76,6 +80,8 @@ header, main, footer{
   color: #fff;
 }
 
+/************************ HERO *************************/
+
 .hero-box {
   max-width: 840px;
   margin: 20px auto;
@@ -97,6 +103,10 @@ header, main, footer{
   place-items: center;
   text-align: center;
   isolation: isolate;
+
+  max-width: var(--max-width);
+  margin: 4px auto;
+  padding: 0;
 }
 
 .hero-img {
@@ -118,6 +128,19 @@ header, main, footer{
   border-radius: 6px;
   font-family: var(--heading-font);
 }
+
+.hero h1#hero-msg {
+  position: absolute;
+  display: inline-block;
+  margin: 12px 0 -100px 0;
+  padding: 0.6rem 0.9rem;
+  background-color: rgba(0,0,0,0.55);
+  color: #fff;
+  border-radius: 6px;
+  font-family: var(--heading-font);
+}
+
+/************************ Happy Client *************************/
 
 .happy-client {
   position: static;             
@@ -148,6 +171,7 @@ header, main, footer{
   line-height: 1.4;
 }
 
+/************************ HISTORY *************************/
 
 .history-box {
   max-width: 840px;           
@@ -183,6 +207,8 @@ header, main, footer{
   border-radius:6px;
   display:block;
 }
+
+/************************ ADVENTURE *************************/
 
 .adventure-box {
   max-width: 840px;           
@@ -232,6 +258,8 @@ header, main, footer{
   color: var(--primary-color);
 }
 
+/************************ FOOTER *************************/
+
 .footer-box {
   max-width: 840px;           
   margin: 20px auto;         
@@ -243,7 +271,7 @@ header, main, footer{
 
 .site-footer {
   display: flex;
-  justify-content: space-between; /* texto à esquerda, ícones à direita */
+  justify-content: space-between;/
   align-items: center;
   padding: 1rem;
 }
@@ -258,6 +286,8 @@ footer p{
   color: var(--accent2-color);
   text-align: left;
 }
+
+/************************ SOCIAL MEDIA *************************/
 
 .socialmedia img{
   height:28px;
@@ -287,7 +317,7 @@ footer p{
   gap:8px;
 }
 
-/****************************************************** CONTACT ******************************************************/
+/****************************************************** CONTACT PAGE ******************************************************/
 
 .company-info-box {
   max-width: 840px;           
@@ -452,4 +482,128 @@ button:hover {
   font-weight:700;
   font-family: var(--heading-font);
   color: var(--primary-color);
+}
+
+/************************ CTA - Trips *************************/
+
+#cta-trips {
+    /*background-color: var(--secondary-color);*/
+    /*color: white;*/
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 6px;
+    margin: 130px auto;
+    max-width: var(--max-width);
+}
+
+#cta-trips h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.button-cta {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    margin-top: 100px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.button-cta:hover {
+    background-color: #f4b63e;
+}
+
+
+/************************ LAYOUT GRID (Purpose E We Offer) *************************/
+
+#grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    margin: 40px auto;
+    padding: 0;
+    max-width: var(--max-width);
+}
+
+.grid-item {
+    background: #fbfbfb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/************************ NEWSLETTER FORM *************************/
+
+#newsletter-section {
+    background-color: var(--accent2-color);
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    max-width: var(--max-width);
+}
+
+#newsletter-section h2 {
+    color: var(--accent1-color);
+    margin-bottom: 5px;
+}
+
+#newsletter-form {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#newsletter-form p {
+    flex-basis: 100%; 
+    margin-bottom: 10px;
+}
+
+#newsletter-form label {
+    display: none; 
+}
+
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 250px;
+    max-width: 100%;
+}
+
+#newsletter-form button {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#newsletter-form button:hover {
+    background-color: #c72943;
 }
